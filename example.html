@@ -70,26 +70,26 @@
 
     <ul class="test">
         <li><h1 class="h1">Color Tests .hasClass()<small>.h1</small></h1></li>
-        <li onclick="alert(E('li:1').hasClass('red'))">(1).hasClass(red)</li>
-        <li onclick="alert(E('li:2').hasClass('blue'))">(2).hasClass(blue)</li>
+        <button type="button" onclick="alert(E('li:1').hasClass('red'))">(1).hasClass(red)</button>
+        <button type="button" onclick="alert(E('li:2').hasClass('blue'))">(2).hasClass(blue)</button>
         <!-- Проверка на наличие одного класса
          если у элемента с несколькокими классами в независимости от их последовательности -->
-        <li onclick="alert(E('li:3').hasClass('yellow'))">(3).hasClass(yellow)</li>
-        <li onclick="alert(E('li:3').hasClass('red'))">(3).hasClass(red)</li>
+        <button type="button" onclick="alert(E('li:3').hasClass('yellow'))">(3).hasClass(yellow)</button>
+        <button type="button" onclick="alert(E('li:3').hasClass('red'))">(3).hasClass(red)</button>
 
-        <li onclick="alert(E('li:3').hasClass('yellow red'))">(3).hasClass(yellow red)</li>
-        <li onclick="alert(E('li:3').hasClass('red yellow'))">(3).hasClass(red yellow)</li>
+        <button type="button" onclick="alert(E('li:3').hasClass('yellow red'))">(3).hasClass(yellow red)</button>
+        <button type="button" onclick="alert(E('li:3').hasClass('red yellow'))">(3).hasClass(red yellow)</button>
     </ul>
 
     <ul class="test">
         <li><h1 class="h1">H1 Tests .hasClass()<small>.h1</small></h1></li>
-        <li onclick="alert(E('h1').hasClass('h1'))">(h1).hasClass(h1)</li>
-        <li onclick="alert(E('h1').hasClass('h1',true))">(h1).hasClass(h1,true)</li>
-        <li onclick="alert(E('h1').hasClass('hcolor'))">(h1).hasClass(hcolor)</li>
-        <li onclick="alert(E('h1').hasClass('hcolor',true))">(h1).hasClass(hcolor,true)</li>
-        <li onclick="alert(E('h1').hasClass('first'))">(h1).hasClass(first)</li>
-        <li onclick="alert(E('h1').hasClass('second'))">(h1).hasClass(second)</li>
-        <li onclick="alert(E('h1').hasClass('h1 hcolor'))">(h1).hasClass(h1 hcolor)</li>
+        <button type="button" onclick="alert(E('h1').hasClass('h1'))">(h1).hasClass(h1)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('h1',true))">(h1).hasClass(h1,true)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('hcolor'))">(h1).hasClass(hcolor)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('hcolor',true))">(h1).hasClass(hcolor,true)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('first'))">(h1).hasClass(first)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('second'))">(h1).hasClass(second)</button>
+        <button type="button" onclick="alert(E('h1').hasClass('h1 hcolor'))">(h1).hasClass(h1 hcolor)</button>
     </ul>
 
     <pre><code class="javascript">
