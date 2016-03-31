@@ -243,3 +243,36 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+ol,ul { width: 170px; float: left }
+ul,button { width: 200px; text-align: left }
+pre { clear: left }
+small { font-size: 0.5em; font-weight: normal; display: block }
+
+li { border-radius: 3px; font-size: 1em; font-family: 'arial'; margin-bottom: 5px; padding: 3px 6px }
+ol#last { position: relative }
+ol#last li:before { content: '-'; position: absolute; left: 1em }
+ol#last li:first-child:before { content: '' }
+
+ol li { list-style: decimal }
+ol li:first-child { list-style: none }
+ul li { list-style: none }
+
+ul.test li:first-child { background: none; cursor: normal }
+ul.test li:first-child:hover { background: none; cursor: normal }
+ul.test li { background: #E6E6E6; border: none; border-radius: 3px; font-size: 1em; outline: none; cursor: pointer }
+ul.test li:hover { background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1)); }
+
+.hide { display: none }
+.red { background: red }
+.yellow { background: yellow }
+.red.yellow {background: #FF8000 }
+
+.chartreuse { background: chartreuse }
+.crimson{ background: crimson }
+.chartreuse.crimson { background: #AE891E }
+
+.darkcyan { background: darkcyan }
+.darkred { background: darkred }
+.darkslategrey { background: darkslategrey }
+.darksalmon { background: darksalmon }
