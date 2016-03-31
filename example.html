@@ -45,25 +45,25 @@
 
     <ol start="0">
         <li><h1 class="h1 hcolor first">Simple colors<small>.h1.hcolor.first</small></h1></li>
-        <li>Red</li>
-        <li>Yellow</li>
-        <li>Red Yellow</li>
+        <li>.red</li>
+        <li>.yellow</li>
+        <li>.red.yellow</li>
     </ol>
 
 
     <ol id="two" start="4">
         <li><h1 class=" h1 hcolor second">Some colors<small>.h1.hcolor.second</small></h1></li>
-        <li class="hide">Chartreuse</li>
-        <li>Crimson</li>
-        <li>Chartreuse Crimson</li>
+        <li class="hide">.chartreuse</li>
+        <li>.crimson</li>
+        <li>.chartreuse.crimson</li>
     </ol>
 
 
     <ol id="last" start="4" reversed>
         <li><h1 class="h1 hcolor">Dark colors<small>.h1.hcolor</small></h1></li>
-        <li class="red">DarkRed</li>
-        <li class="darkcyan">DarkCyan</li>
-        <li>DarkSalmon</li>
+        <li class="red">.red</li>
+        <li class="darkcyan">.darkcyan</li>
+        <li>.darksalmon</li>
     </ol>
 
     <ul class="test">
@@ -101,7 +101,7 @@
 
         E('#last li:-1').addClass('darksalmon');
         E('#last li.darkcyan').removeClass('darkcyan').addClass('darkslategrey').html('DarkSlateGray');
-        E('#last li:-3').addClass('darkred').removeClass('red');
+        E('#last li:-3').addClass('darkred').removeClass('red').html('.darkred');
     </code></pre>
     
     <script src="highlight.pack.js"></script>
