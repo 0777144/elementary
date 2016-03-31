@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Elementary</title>
+    <link rel="stylesheet" href="vs.css">
+    <script src="highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <style>
         ol,ul { width: 170px; float: left }
         ul,button { width: 200px; text-align: left }
@@ -87,7 +92,7 @@
         <li onclick="alert(E('h1').hasClass('h1 hcolor'))">(h1).hasClass(h1 hcolor)</li>
     </ul>
 
-    <pre>
+    <pre><code class="javascript">
         E('li:1').addClass('red');
         E('li:2').addClass('yellow');
         E('li:3').addClass('red yellow');
@@ -99,8 +104,8 @@
         E('#last li:-1').addClass('darksalmon');
         E('#last li.darkcyan').removeClass('darkcyan').addClass('darkslategrey').html('DarkSlateGray');
         E('#last li:-3').addClass('darkred').removeClass('red');
-    </pre>
-    <script src="https://raw.githubusercontent.com/0777144/elementary/master/Elementary.js"></script>
+    </code></pre>
+    <script src="Elementary.js"></script>
     <script>
 
         E('li:1').addClass('red');
