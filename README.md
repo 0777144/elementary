@@ -1,5 +1,6 @@
-# <a href="http://0777144.github.io/elementary/">elementary</a>
-Elementary is simple js lib to work with dom classes
+# Elementary
+Elementary is simple js lib to work with dom classes.
+<a href="http://0777144.github.io/elementary/">View project page</a>
 
 #Short docs
 ```javascript
