@@ -43,7 +43,11 @@
         E('#menu li').addClass('open').addClass('active');
         
         E('body').hasClass('menu-open');
-        E('li').hasClass('item',true);//if useStrictMode = true return false if at least one hasn't that class
+        E('li').hasClass('item',true);//if useStrictMode = true 
+                                      //return false if at least one hasn't that class
+                                      
+        E('.output').html('some text');
+        E('div:1').html();//return innerHTML of second div
         
     </code></pre>
     <script src="highlight.pack.js"></script>
