@@ -21,25 +21,30 @@
 
     <section class="main-content">
       <h3>
-        Usage
+        About
       </h3>
-      <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+      <p>It is a simple javascript lib to manage dom elements class.</p>
       
       <h3>
         Examples
       </h3>
       <pre><code class="javascript">
-        E('li:1').addClass('red');
-        E('li:2').addClass('yellow');
-        E('li:3').addClass('red yellow');
-
-        E('li:5').removeClass('hide').addClass('chartreuse');
-        E('li:6').addClass('crimson');
-        E('li:7').addClass('chartreuse').addClass('crimson');
-
-        E('#last li:-1').addClass('darksalmon');
-        E('#last li.darkcyan').removeClass('darkcyan').addClass('darkslategrey').html('DarkSlateGray');
-        E('#last li:-3').addClass('darkred').removeClass('red');
+        
+        Elementary('.someclass'); //get element by class
+        E('.someclass'); //or short syntax
+        E('li:0'); //get first li
+        E('li:-1'); //get first li from end
+        
+        E('#menu').addClass('open');
+        E('#menu').toggleClass('open');
+        E('body').removeClass('no-js');
+        
+        E('#menu li').addClass('open active');// add several classes
+        E('#menu li').addClass('open').addClass('active');
+        
+        E('body').hasClass('menu-open');
+        E('li').hasClass('item',true);//if useStrictMode = true return false if at least one hasn't that class
+        
     </code></pre>
     <script src="highlight.pack.js"></script>
     <script>
