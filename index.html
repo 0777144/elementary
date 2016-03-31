@@ -28,56 +28,7 @@
       <h3>
         Examples
       </h3>
-      
-      
-    <ol start="0">
-        <li><h1 class="h1 hcolor first">Simple colors<small>.h1.hcolor.first</small></h1></li>
-        <li>Red</li>
-        <li>Yellow</li>
-        <li>Red Yellow</li>
-    </ol>
-
-
-    <ol id="two" start="4">
-        <li><h1 class=" h1 hcolor second">Some colors<small>.h1.hcolor.second</small></h1></li>
-        <li class="hide">Chartreuse</li>
-        <li>Crimson</li>
-        <li>Chartreuse Crimson</li>
-    </ol>
-
-
-    <ol id="last" start="4" reversed>
-        <li><h1 class="h1 hcolor">Dark colors<small>.h1.hcolor</small></h1></li>
-        <li class="red">DarkRed</li>
-        <li class="darkcyan">DarkCyan</li>
-        <li>DarkSalmon</li>
-    </ol>
-
-    <ul class="test">
-        <li><h1 class="h1">Color Tests .hasClass()<small>.h1</small></h1></li>
-        <li onclick="alert(E('li:1').hasClass('red'))">(1).hasClass(red)</li>
-        <li onclick="alert(E('li:2').hasClass('blue'))">(2).hasClass(blue)</li>
-        <!-- Проверка на наличие одного класса
-         если у элемента с несколькокими классами в независимости от их последовательности -->
-        <li onclick="alert(E('li:3').hasClass('yellow'))">(3).hasClass(yellow)</li>
-        <li onclick="alert(E('li:3').hasClass('red'))">(3).hasClass(red)</li>
-
-        <li onclick="alert(E('li:3').hasClass('yellow red'))">(3).hasClass(yellow red)</li>
-        <li onclick="alert(E('li:3').hasClass('red yellow'))">(3).hasClass(red yellow)</li>
-    </ul>
-
-    <ul class="test">
-        <li><h1 class="h1">H1 Tests .hasClass()<small>.h1</small></h1></li>
-        <li onclick="alert(E('h1').hasClass('h1'))">(h1).hasClass(h1)</li>
-        <li onclick="alert(E('h1').hasClass('h1',true))">(h1).hasClass(h1,true)</li>
-        <li onclick="alert(E('h1').hasClass('hcolor'))">(h1).hasClass(hcolor)</li>
-        <li onclick="alert(E('h1').hasClass('hcolor',true))">(h1).hasClass(hcolor,true)</li>
-        <li onclick="alert(E('h1').hasClass('first'))">(h1).hasClass(first)</li>
-        <li onclick="alert(E('h1').hasClass('second'))">(h1).hasClass(second)</li>
-        <li onclick="alert(E('h1').hasClass('h1 hcolor'))">(h1).hasClass(h1 hcolor)</li>
-    </ul>
-
-    <pre><code class="javascript">
+      <pre><code class="javascript">
         E('li:1').addClass('red');
         E('li:2').addClass('yellow');
         E('li:3').addClass('red yellow');
@@ -90,20 +41,9 @@
         E('#last li.darkcyan').removeClass('darkcyan').addClass('darkslategrey').html('DarkSlateGray');
         E('#last li:-3').addClass('darkred').removeClass('red');
     </code></pre>
-    <script src="Elementary.js"></script>
+    <script src="highlight.pack.js"></script>
     <script>
-
-        E('li:1').addClass('red');
-        E('li:2').addClass('yellow');
-        E('li:3').addClass('red yellow');
-
-        E('li:5').removeClass('hide').addClass('chartreuse');
-        E('li:6').addClass('crimson');
-        E('li:7').addClass('chartreuse').addClass('crimson');
-
-        E('#last li:-1').addClass('darksalmon');
-        E('#last li.darkcyan').removeClass('darkcyan').addClass('darkslategrey').html('DarkSlateGray');
-        E('#last li:-3').addClass('darkred').removeClass('red');
+        hljs.initHighlightingOnLoad();
     </script>
 
       <footer class="site-footer">
